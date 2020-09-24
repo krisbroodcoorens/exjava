@@ -33,7 +33,7 @@ public class ExerciseC2
 		//print number of instructors
 		System.out.println("This course has " +courseInstructors.size()+ " instructors.");
 				
-		// If a course takes more than 3 days and no prior knowledge is required, you don't need to pay VAT.
+		// Label the course based on the price per day
 		if (priceDay < 500.00)
 		{
 			labelCourse = "Cheap";
