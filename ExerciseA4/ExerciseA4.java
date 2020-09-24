@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExerciseA3
+public class ExerciseA4
 {
 	public static void main(String[] args)
 	{
-		String courseTitle = "Java Reskilling";
-		int numberDays = 30;
-		double priceDay = 1000.00;
-		boolean priorKnowledge = false;
+		String courseTitle = args[0];
+		int numberDays = Integer.parseInt(args[1]);
+		double priceDay = Double.parseDouble(args[2]);
+		boolean priorKnowledge = Boolean.parseBoolean(args[3]);
 		List<String> courseInstructors = new ArrayList<String>();
 		
 		courseInstructors.add("Sandy");
