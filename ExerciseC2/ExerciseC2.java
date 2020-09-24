@@ -10,8 +10,7 @@ public class ExerciseC2
 		int numberDays;
 		double priceDay;
 		boolean priorKnowledge;
-		List<String> courseInstructors = new ArrayList<String>();
-		double totalPrice;
+		List<String> courseInstructors = new ArrayList<String>();		
 		String labelCourse;
 		
 		//accept values from user
@@ -48,13 +47,13 @@ public class ExerciseC2
 			labelCourse = "Expensive";
 		}
 		
-		totalPrice = calculateTotal(numberDays, priceDay, priorKnowledge);
-		System.out.println("The total price of this course is " +totalPrice+ " euro. The course is labeled as " +labelCourse);
+		System.out.println("The course is labeled as " +labelCourse);
 	}
 	
 	public static void printInfo(String title, int days, double price, boolean knowledge)
 	{
 		System.out.println("The course " +title+ " takes " +days+ " days for " +price+ " per day and prior knowledge is " +knowledge+ ".");		
+		System.out.println("The total price of this course is " +calculateTotal(days, price, knowledge)+ " euro.");
 	}
 	
 	public static double calculateTotal(int days, double price, boolean knowledge)
