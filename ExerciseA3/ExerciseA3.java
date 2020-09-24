@@ -1,4 +1,4 @@
-public class ExerciseA2
+public class ExerciseA3
 {
 	public static void main(String[] args)
 	{
@@ -11,7 +11,9 @@ public class ExerciseA2
 		courseInstructors.add("Sandy");
 		courseInstructors.add("Guy");
 		System.out.println("The course " +courseTitle+ " takes " +numberDays+ " days for " +priceDay+ " per day and prior knowledge is " +priorKnowledge+ ".");
-		System.out.println("This course has " +courseInstructors.size()+ " instructors");
-		
+		System.out.println("This course hase " +courseInstructors.size()+ " instructors.");
+
+		double totalPrice = ((numberDays * priceDay) + ((numberDays * priceDay) * 0.21));
+		System.out.println("The total price of this course is €" +totalPrice+ ".");
 	}	
 }
