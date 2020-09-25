@@ -96,16 +96,16 @@ public class Instructor
 		
 		try 
 		{
-			FileWriter mySalaryHistoryWriter = new FileWriter("salaryHistory.txt");
+			FileWriter mySalaryHistoryWriter = new FileWriter("salaryHistory-" +firstName+".txt");
 			while (increasedAge <= currentAge && (increasedAge - startAge) <= 35 )
 			{
 				mySalaryHistoryWriter.write("Salary of " + firstName + " at " + increasedAge + " is " + increasedSalary + "\n");
 				increasedAge += 5;
 				increasedSalary *= 1.03;
 			}
-			mySalaryHistoryWriter.write("Maximum Salary reached");
-			System.out.println("Successfully create file salaryHistory.txt");
-			mySalaryHistoryWriter.close();			
+			mySalaryHistoryWriter.write("Maximum Salary reached for " +firstName);
+			System.out.println("Successfully create file salaryHistory-" +firstName+ ".txt");
+			mySalaryHistoryWriter.close();		
 		}
 		catch(IOException expSalaryHistory) 
 		{

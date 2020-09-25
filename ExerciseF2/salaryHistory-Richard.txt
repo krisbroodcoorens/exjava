@@ -1,0 +1,9 @@
+Salary of Richard at 24 is 2000.0
+Salary of Richard at 29 is 2060.0
+Salary of Richard at 34 is 2121.8
+Salary of Richard at 39 is 2185.454
+Salary of Richard at 44 is 2251.01762
+Salary of Richard at 49 is 2318.5481486000003
+Salary of Richard at 54 is 2388.1045930580003
+Salary of Richard at 59 is 2459.7477308497405
+Maximum Salary reached for Richard
