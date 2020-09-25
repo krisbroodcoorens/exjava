@@ -1,0 +1,9 @@
+The course Mathematics takes 20 days for 550.0 per day and prior knowledge is true.
+The total price of this course is 11000.0 euro.
+The course is labeled as Ok
+This course has 4 instructors.
+The instructors for this course are: 
+Sandy
+Gie
+Patrick
+Jan
