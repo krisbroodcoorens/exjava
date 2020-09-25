@@ -1,0 +1,3 @@
+The course Java takes 20 days for 500.0 per day and prior knowledge is false.
+The total price of this course is 12100.0 euro.
+The course is labeled as Ok
