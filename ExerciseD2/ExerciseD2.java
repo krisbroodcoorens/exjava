@@ -85,10 +85,10 @@ public class ExerciseD2
 	{
 		try 
 		{
-			File myPrintInfoFile = new File("PrintInfo.txt");
+			File myPrintInfoFile = new File("courseInfo.txt");
 			if (myPrintInfoFile.createNewFile())
 			{
-				FileWriter myPrintInfoWriter = new FileWriter("PrintInfo.txt");
+				FileWriter myPrintInfoWriter = new FileWriter("courseInfo.txt");
 			    myPrintInfoWriter.write("The course " +title+ " takes " +days+ " days for " +price+ " per day and prior knowledge is " +knowledge+ "." + "\r\n");
 			    myPrintInfoWriter.write("The total price of this course is " +calculateTotal(days, price, knowledge)+ " euro." + "\r\n"); 
 			    myPrintInfoWriter.write("The course is labeled as " +label + "\r\n"); 
