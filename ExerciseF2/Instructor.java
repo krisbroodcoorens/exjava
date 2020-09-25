@@ -73,6 +73,21 @@ public class Instructor
 		this.startSalary = startSalary;
 	}	
 	
+	public void displaySalaryHistory () 
+	{
+		int increasedAge = startAge;
+		double increasedSalary = startSalary;
+		int currentAge = age;
+
+		while (increasedAge <= currentAge && (increasedAge - startAge) <= 35 )
+		{
+			System.out.println("Salary of " + firstName + " at " + increasedAge + " is " + increasedSalary + "\n");
+			increasedAge += 5;
+			increasedSalary *= 1.03;
+		}
+		System.out.println("Maximum Salary reached for " +firstName+ " " +lastName);  
+	} 
+	
 	public void printSalaryHistory () 
 	{
 		int increasedAge = startAge;

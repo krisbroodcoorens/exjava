@@ -15,13 +15,19 @@ public class ExerciseF2
 		myFirstInstructor.setAge(acceptAge(readInputData));
 		myFirstInstructor.setStartAge(acceptStartAge(readInputData));
 		myFirstInstructor.setStartSalary(acceptStartSalary(readInputData));
-		//Calculate salary history for "myFirstInstructor"
-		myFirstInstructor.printSalaryHistory();		
+		//Calculate & display salary history for "myFirstInstructor"
+		myFirstInstructor.displaySalaryHistory();		
 		readInputData.close();
 		
 		//Declare "mySecondInstructor"
 		Instructor mySecondInstructor = new Instructor("Kris", "Broodcoorens", 37, 21, 1290.0);
-		mySecondInstructor.printSalaryHistory();
+		//Calculate & display salary history for "mySecondInstructor"
+		mySecondInstructor.displaySalaryHistory();
+		
+		//Declare "myThirdInstructor"
+		Instructor myThirdInstructor = new Instructor("Tom", "Blomme", 45, 23, 2000.0);
+		//Calculate & display salary history for "myThirdInstructor"
+		myThirdInstructor.displaySalaryHistory();
 	}
 	
 	public static String acceptFirstName(Scanner readInputData)
