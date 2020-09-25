@@ -6,36 +6,22 @@ public class ExerciseF2
 {
 	public static void main(String[] args)
 	{
-		String firstName;
-		int age;
-		int startAge;
-		double startSalary;
-		Instructor myInstructor = new Instructor();
-		Scanner readInputData = new Scanner(System.in);
-	
-		//Accept value "instructorFirstName" from user via Terminal
-		myInstructor.setFirstName(acceptFirstName(readInputData));		
-		
-		//Accept value "instructorFirstName" from user via Terminal
-		myInstructor.setLastName(acceptLastName(readInputData));	
-		
-		//Accept value "instructorFirstName" from user via Terminal
-		myInstructor.setAge(acceptAge(readInputData));
-		
-		//Accept value "startAge" from user via Terminal
-		myInstructor.setStartAge(acceptStartAge(readInputData));
-		
-		//Accept value "instructorFirstName" from user via Terminal
-		myInstructor.setStartSalary(acceptStartSalary(readInputData));
-		
-		//Calculate salary history
-		firstName = myInstructor.getFirstName();
-		age = myInstructor.getAge();
-		startAge = myInstructor.getStartAge();
-		startSalary = myInstructor.getStartSalary();
-		myInstructor.printSalaryHistory(firstName, age, startAge, startSalary);		
-		
+		//Declare "myFirstInstructor"
+		Instructor myFirstInstructor = new Instructor();
+		Scanner readInputData = new Scanner(System.in);	
+		//Accept values for "myFirstInstructor" from user via Terminal
+		myFirstInstructor.setFirstName(acceptFirstName(readInputData));		
+		myFirstInstructor.setLastName(acceptLastName(readInputData));	
+		myFirstInstructor.setAge(acceptAge(readInputData));
+		myFirstInstructor.setStartAge(acceptStartAge(readInputData));
+		myFirstInstructor.setStartSalary(acceptStartSalary(readInputData));
+		//Calculate salary history for "myFirstInstructor"
+		myFirstInstructor.printSalaryHistory();		
 		readInputData.close();
+		
+		//Declare "mySecondInstructor"
+		Instructor mySecondInstructor = new Instructor("Kris", "Broodcoorens", 37, 21, 1290.0);
+		mySecondInstructor.printSalaryHistory();
 	}
 	
 	public static String acceptFirstName(Scanner readInputData)
@@ -49,7 +35,6 @@ public class ExerciseF2
 			{
 				System.out.println("Please enter instructor first name: ");
 				firstName = readInputData.nextLine();
-				System.out.println(firstName);				
 				if (firstName.isEmpty())
 				{
 					System.out.println("Instructor first name should be filled in.");

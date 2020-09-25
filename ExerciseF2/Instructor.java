@@ -73,7 +73,7 @@ public class Instructor
 		this.startSalary = startSalary;
 	}	
 	
-	public void printSalaryHistory (String firstName, int age, int startAge, double startSalary) 
+	public void printSalaryHistory () 
 	{
 		int increasedAge = startAge;
 		double increasedSalary = startSalary;
